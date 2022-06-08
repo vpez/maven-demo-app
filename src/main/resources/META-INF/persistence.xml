@@ -17,7 +17,7 @@
             <property name="jakarta.persistence.schema-generation.scripts.drop-target" value="drop.sql"/>
 
             <!-- Generate schema in the database -->
-            <property name="jakarta.persistence.schema-generation.database.action" value="none"/>
+            <property name="jakarta.persistence.schema-generation.database.action" value="drop-and-create"/>
         </properties>
     </persistence-unit>
 </persistence>
