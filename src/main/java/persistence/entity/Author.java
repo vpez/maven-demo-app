@@ -1,5 +1,6 @@
 package persistence.entity;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
@@ -14,5 +15,6 @@ public class Author {
     @GeneratedValue(generator = "author_sequence")
     private Long id;
 
+    @Column(unique = true, nullable = false)
     private String name;
 }

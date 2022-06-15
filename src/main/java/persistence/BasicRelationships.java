@@ -19,7 +19,7 @@ class BasicRelationships implements App.TestCase {
         book.setAuthor(author);
 
         entityManager.getTransaction().begin();
-        entityManager.persist(author);
+        // persisting author is automatically done by JPA since it is marked as cascade
         entityManager.persist(book);
         entityManager.getTransaction().commit();
 
